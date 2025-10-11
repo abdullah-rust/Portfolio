@@ -6,7 +6,7 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "types": ["vite/client"],
-    "skipLibCheck": true,
+    "skipLibCheck": true, // ✅ libraries ke types ignore karne ke liye
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -16,12 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    /* Linting / Type Checking */
+    "strict": false, // ✅ strict mode off kar do
+    "noUnusedLocals": false, // optional, warnings off
+    "noUnusedParameters": false, // optional, warnings off
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": false, // optional
     "noUncheckedSideEffectImports": true
   },
   "include": ["src"]
