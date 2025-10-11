@@ -180,7 +180,9 @@ const Contact = () => {
                   key={method.title}
                   href={method.link}
                   className={styles.contactMethod}
-                  style={{ "--method-color": method.color }}
+                  style={
+                    { "--method-color": method.color } as React.CSSProperties
+                  }
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.3 + index * 0.1 }}
@@ -221,7 +223,9 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.socialLink}
-                    style={{ "--social-color": social.color }}
+                    style={
+                      { "--social-color": social.color } as React.CSSProperties
+                    }
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{
@@ -363,7 +367,7 @@ const Contact = () => {
                   onChange={handleChange}
                   className={styles.textarea}
                   required
-                  rows="6"
+                  rows={6}
                   placeholder="Tell me about your project or just say hello..."
                 ></textarea>
               </motion.div>
