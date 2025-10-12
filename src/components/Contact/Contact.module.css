@@ -524,3 +524,24 @@
     padding: 0.75rem 1.5rem;
   }
 }
+
+/* Extra Mobile Tweaks */
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 140px; /* thoda upar se space */
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding-top: 160px; /* chhoti screens pe aur zyada space */
+  }
+
+  .container {
+    margin-top: 25px;
+  }
+}

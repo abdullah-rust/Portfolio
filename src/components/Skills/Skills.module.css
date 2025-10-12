@@ -445,3 +445,24 @@
     padding: 0.75rem 1.5rem;
   }
 }
+
+/* Extra Mobile Tweaks */
+@media (max-width: 768px) {
+  .skills {
+    padding-top: 140px; /* zyada space top se */
+  }
+
+  .container {
+    margin-top: 20px; /* thoda extra gap */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding-top: 150px; /* chhoti screen par aur zyada space */
+  }
+
+  .container {
+    margin-top: 25px;
+  }
+}

@@ -444,3 +444,18 @@
     display: none;
   }
 }
+
+/* Extra Mobile Tweaks */
+@media (max-width: 768px) {
+  .about {
+    padding-top: 140px; /* pehle 100px tha, thoda zyada space de diya */
+  }
+
+  .container {
+    margin-top: 20px; /* thoda extra gap from top */
+  }
+
+  .profileImage {
+    margin-top: 10px; /* image ko thoda neeche laane ke liye */
+  }
+}

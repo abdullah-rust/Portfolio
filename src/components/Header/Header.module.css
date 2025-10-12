@@ -1,4 +1,6 @@
 /* Header.module.css */
+
+/* Base Header */
 .header {
   position: fixed;
   top: 0;
@@ -9,6 +11,7 @@
   border-bottom: 1px solid rgba(255, 107, 0, 0.2);
   z-index: 1000;
   padding: 1rem 0;
+  transition: all 0.3s ease;
 }
 
 .container {
@@ -18,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Logo Styles */
@@ -30,7 +34,7 @@
 }
 
 .logoText {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
   background: linear-gradient(45deg, #ff6b00, #ff8c00, #ffa500);
   -webkit-background-clip: text;
@@ -58,15 +62,17 @@
   }
 }
 
-/* Navigation Styles */
+/* Navigation Bar */
 .nav {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.75rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .navItemWrapper {
@@ -84,10 +90,10 @@
   border-radius: 25px;
   cursor: pointer;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
   position: relative;
-  z-index: 5; /* increase */
+  z-index: 5;
   white-space: nowrap;
 }
 
@@ -96,7 +102,7 @@
 }
 
 .navLink.active {
-  color: #000000; /* black se white */
+  color: #000;
   font-weight: 600;
 }
 
@@ -113,7 +119,7 @@
   box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
 }
 
-/* Hover Effect */
+/* Hover underline */
 .hoverEffect {
   position: absolute;
   bottom: -2px;
@@ -130,7 +136,7 @@
   width: 60%;
 }
 
-/* CTA Button Styles */
+/* CTA Button */
 .ctaSection {
   display: flex;
   align-items: center;
@@ -178,31 +184,13 @@
   font-weight: bold;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  .nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .navLink {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-  }
-
-  .logoText {
-    font-size: 1.2rem;
-  }
+/* Scroll Animation */
+.scrolled {
+  background: rgba(15, 15, 15, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Glass morphism effect */
+/* Glass Morphism */
 .header::before {
   content: "";
   position: absolute;
@@ -220,8 +208,68 @@
   opacity: 0.5;
 }
 
-/* Scroll animation */
-.scrolled {
-  background: rgba(15, 15, 15, 0.95);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+/* ============== RESPONSIVE ============== */
+
+/* Tablet (<=1024px) */
+@media (max-width: 1024px) {
+  .logoText {
+    font-size: 1.4rem;
+  }
+
+  .nav {
+    gap: 0.4rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .navLink {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile (<=768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navLink {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .ctaSection {
+    display: none; /* Hide on mobile for clean layout */
+  }
+}
+
+/* Very Small Devices (<=480px) */
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    padding: 0.4rem;
+    gap: 0.25rem;
+  }
+
+  .navLink {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.75rem;
+  }
+
+  .logoDot {
+    width: 6px;
+    height: 6px;
+  }
 }

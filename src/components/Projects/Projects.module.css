@@ -527,3 +527,24 @@
     gap: 0.5rem;
   }
 }
+
+/* Extra Mobile Tweaks */
+@media (max-width: 768px) {
+  .projects {
+    padding-top: 140px; /* top se zyada space */
+  }
+
+  .container {
+    margin-top: 20px; /* thoda gap add */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding-top: 160px; /* chhoti screens pe aur zyada space */
+  }
+
+  .container {
+    margin-top: 25px;
+  }
+}
