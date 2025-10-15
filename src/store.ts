@@ -5,4 +5,4 @@ import { atom } from "jotai";
 export const currentPageAtom = atom("home");
 
 // ✅ Pages array
-export const pages = ["home", "about", "skills", "projects", "contact"];
+export const pages = ["home", "about", "projects", "contact"];

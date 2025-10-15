@@ -14,6 +14,6 @@ It showcases my skills, projects, and contact information — designed to be fas
 To run locally:
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```

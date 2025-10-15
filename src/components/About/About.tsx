@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 import styles from "./About.module.css";
 import profilePic from "/image.png"; // ✅ Apna real image yahan import karo
+import Skills from "../Skills/skills";
 
 const About = () => {
   const stats = [
@@ -117,7 +118,7 @@ const About = () => {
               transition={{ delay: 0.6 }}
             >
               <p>
-                Hi! I'm a self-taught <strong>Backend Developer</strong> with a
+                Hi! I'm a <strong>Backend Developer</strong> with a
                 focus on building scalable and efficient server-side
                 applications. I work with databases, APIs, and cloud deployments
                 to make sure the systems perform reliably under load.
@@ -153,6 +154,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
+      <Skills/>
     </motion.section>
   );
 };

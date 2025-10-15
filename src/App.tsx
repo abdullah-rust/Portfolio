@@ -7,7 +7,6 @@ import Home from "./components/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-import Skills from "./components/Skills/skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contacts";
 
@@ -22,8 +21,6 @@ function App() {
         return <Home />;
       case "about":
         return <About />;
-      case "skills":
-        return <Skills />;
       case "projects":
         return <Projects />;
       case "contact":

@@ -36,7 +36,7 @@ const Home = () => {
           </motion.h1>
 
           <motion.p className={styles.heroSubtitle}>
-            Self-Taught Full Stack Developer & Passionate Creator Bringing Ideas
+           Full Stack Developer & Passionate Creator Bringing Ideas
             to Life
           </motion.p>
 
