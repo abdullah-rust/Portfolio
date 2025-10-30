@@ -37,7 +37,7 @@ const Projects = () => {
       ],
       githubLink: "https://github.com/abdullah-rust/zyra",
       color: "#154075ff",
-      status: "Live",
+      status: "complete",
     },
     {
       id: 2,
@@ -72,7 +72,7 @@ const Projects = () => {
       githubLink: "https://github.com/abdullah-rust/dyzora",
       liveLink: "https://dyzora-store.vercel.app",
       color: "#10b981",
-      status: "Live",
+      status: "development",
     },
     {
       id: 3,
@@ -105,7 +105,7 @@ const Projects = () => {
       githubLink: "https://github.com/abdullah-rust/filora",
       liveLink: "https://filora-cloud.vercel.app",
       color: "#f59e0b",
-      status: "Live",
+      status: "complete",
     },
   ];
 
